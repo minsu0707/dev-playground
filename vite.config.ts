@@ -20,6 +20,14 @@ export default defineConfig({
         find: "@pages",
         replacement: path.resolve(__dirname, "src/pages"),
       },
+      {
+        find: "@constants",
+        replacement: path.resolve(__dirname, "src/constants"),
+      },
+      {
+        find: "@projects",
+        replacement: path.resolve(__dirname, "src/projects"),
+      },
     ],
   },
 });

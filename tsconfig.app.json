@@ -28,7 +28,8 @@
       "@src": ["./src"],
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
-      "@projects/*": ["./src/projects/*"]
+      "@projects/*": ["./src/projects/*"],
+      "@constants/*": ["./src/constants/*"]
     }
   },
   "include": ["src"]
