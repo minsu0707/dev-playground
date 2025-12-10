@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { navContents } from "@constants/navContents";
+import { NAV_CONTENT } from "@constants/navContents";
 
 export const Header = () => {
   const [show, setShow] = useState(true);
@@ -31,7 +31,7 @@ export const Header = () => {
     >
       <nav className="container mx-auto">
         <ul className="flex justify-center gap-6">
-          {navContents.map((item) => (
+          {NAV_CONTENT.map((item) => (
             <li key={item.path}>
               <a href={item.path}>{item.name}</a>
             </li>

@@ -1,6 +1,6 @@
 import { Input } from "@components/todo/Input";
 import { TodoItem } from "@components/todo/TodoItem";
-import { useState } from "react";
+import { useState, type ChangeEvent } from "react";
 import { toast } from "react-toastify";
 
 export interface ITodo {
@@ -14,7 +14,7 @@ export const TodoList = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
   const [inputValue, setInputValue] = useState<string>("");
 
-  const onChangeInputValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeInputValue = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInputValue(value);
   };
